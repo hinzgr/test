@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suchen – Fundbüro</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #fff;
+            padding: 16px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            border: 2px solid #000;
+            border-radius: 6px;
+            padding: 10px 14px;
+            margin-bottom: 16px;
+            width: 100%;
+        }
+
+        .search-bar input {
+            border: none;
+            outline: none;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        .search-bar span {
+            font-size: 18px;
+        }
+
+        .item-card {
+            display: flex;
+            align-items: flex-start;
+            border: 2px solid #000;
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 12px;
+            gap: 14px;
+        }
+
+        .item-card img {
+            width: 60px;
+            height: 70px;
+            object-fit: contain;
+        }
+
+        .item-card .placeholder-img {
+            width: 60px;
+            height: 70px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #999;
+            flex-shrink: 0;
+        }
+
+        .item-info h3 {
+            font-style: italic;
+            text-decoration: underline;
+            font-size: 18px;
+            margin-bottom: 4px;
+        }
+
+        .item-info p {
+            font-style: italic;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Suchen">
+        <span>🔍</span>
+    </div>
+
+    <div class="item-card">
+        <div class="placeholder-img">🧴</div>
+        <div class="item-info">
+            <h3>Trinkflasche</h3>
+            <p>Beschreibung:</p>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="placeholder-img">👕</div>
+        <div class="item-info">
+            <h3>T-Shirt</h3>
+            <p>Beschreibung:<br>
+            - langarm<br>
+            - Größe S (small)<br>
+            - grün</p>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="placeholder-img">🧢</div>
+        <div class="item-info">
+            <h3>Mütze</h3>
+            <p>Beschreibung:<br>
+            - beige</p>
+        </div>
+    </div>
+
+    <div class="item-card">
+        <div class="placeholder-img">🧦</div>
+        <div class="item-info">
+            <h3>Socke</h3>
+            <p>Beschreibung:<br>
+            - rot<br>
+            - Größe 38–42</p>
+        </div>
+    </div>
+
+</body>
+</html>
